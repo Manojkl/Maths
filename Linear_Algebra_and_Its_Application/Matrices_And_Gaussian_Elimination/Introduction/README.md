@@ -85,5 +85,8 @@ $$
 
 - Number of elimination steps needed to solve system of size n. The cost computing and accuracy is the major issue with normal subtraction and addition to solve n equation. n being very large. 
 - 100 equations need 1/3 million steps. As the number of equations grows and reaches million steps then roundoff error comes into picture. So to solve large number of equations without compromising on the accuracy and computation cost Gaussian elimination is the algorithm. 
+- AI found news ways to multiply two matrices efficiently. [Disovering novel algorithms with AlphaTensor](https://www.deepmind.com/blog/discovering-novel-algorithms-with-alphatensor?utm_source=thenewstack&utm_medium=website&utm_content=inline-mention&utm_campaign=platform).
+
+
 
 
