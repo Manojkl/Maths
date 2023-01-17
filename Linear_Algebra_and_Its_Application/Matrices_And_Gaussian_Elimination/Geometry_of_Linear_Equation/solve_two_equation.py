@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Define the equation of the plane
+# aX+bY+cZ+d = 0
 a, b, c, d = 2, 1, 1, -5
 
 # Create a grid of points for the x, y coordinates
@@ -19,13 +20,20 @@ ax.plot_surface(X, Y, Z, color='y')
 a, b, c, d = 4, -6, 0, -2
 
 Z = (-d - a*X - b*Y)/c
+Z = 0 
 
-ax.plot_surface(X, Y, Z, color='m')
+x = np.linspace(-20, 20, 100)
+y = (4*x+2)/6
+ax.plot(x, y, '-r')
+
+# ax.plot_surface(X, Y, Z, color='m')
 
 a, b, c, d = -2, 7, 2, -9
 
 Z = (-d - a*X - b*Y)/c
 
 ax.plot_surface(X, Y, Z, color='m')
+
+plt.plot(1, 1, 2, "-s", markersize=20)
 
 plt.show()

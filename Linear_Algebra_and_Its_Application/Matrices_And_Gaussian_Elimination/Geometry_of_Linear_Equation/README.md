@@ -57,6 +57,47 @@ For visualization see [3D planes intersection](https://www.geogebra.org/m/pjczxa
 
 First equation produces an (n-1) dimensional plane in n dimensions. And 2nd equation intersects and reduce the dimension by n-2 in n dimensions. Every equation reduces the dimensions, given they intersect.
 
+# Column Vectors and Linear Combinations
+
+The three equations
+
+1. 2u + v + w = 5
+2. 4u - 6v    = -2
+3. -2u+7v+2w = 9
+
+can be written in vector form
+
+$$
+u*\left(\begin{array}{cc} 
+2 \\
+4 \\
+-2 
+\end{array}\right) + v*
+\left(\begin{array}{cc} 
+1 \\ 
+-6 \\
+7
+\end{array}\right) + w*
+\left(\begin{array}{cc} 
+1 \\ 
+0 \\
+2
+\end{array}\right) = 
+\left(\begin{array}{cc} 
+5 \\ 
+-2 \\
+9
+\end{array}\right) = b
+$$
+
+- The vector is represented with (5, -2, 9)
+- Descartes matched the three dimensional point to a vector.
+- The result [5, -2, 9] is the linear combination of [5, 0, 0] + [0, -2, 0] + [0, 0, 9].
+- The result [5, -2, 9] is also a linear combination of 1*[2, 4, -2] + 1*[1, -6, 7] + 2*[1, 0, 2]. This is obtained by multiplying the vector by a scalar.
+- With n equations and n unknowns, there are n planes and n vectors in the column picture. 
+
+- Some times there exist a linear combination and sometimes not. When there does not exist a linear combination, it is called as the singular case.
+
 
 
 
