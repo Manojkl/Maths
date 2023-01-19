@@ -28,7 +28,6 @@ x*\left(\begin{array}{cc}
 1 \\ 
 5 
 \end{array}\right)
-
 $$
 
 The vectors (2,1) and (-1, 1) are represented by bold lines. The unknown are the numbers x and y that multiply the column vector. if we multiply 2 times the column 1 and 3 times the column 2 will result in parallelogram meeting at point (1, 5). Right side of the equation.
@@ -98,7 +97,20 @@ $$
 
 - Some times there exist a linear combination and sometimes not. When there does not exist a linear combination, it is called as the singular case.
 
+# The Singular Case
 
+- Parallel plane give no solution
+- There are four conditions for three planes, two parallel plane intersect with the third plane
+- No intersection of planes, however, two planes intersect and the intersection is a line. And the intersection lines are parallel to each other.
+
+1. u + v + w = 2
+2. 2u + 3w = 5
+3. 3u+v+4w = 6
+
+- The above system is a singular case, since no solution available.
+- The equations are inconsistent. Systematically shown by Gaussian elimination.
+- Another singular system has infinity of solutions.
+- 
 
 
 

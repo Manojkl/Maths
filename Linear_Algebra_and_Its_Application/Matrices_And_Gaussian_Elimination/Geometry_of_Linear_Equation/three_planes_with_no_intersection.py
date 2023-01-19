@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # Define the equation of the plane
 # aX+bY+cZ+d = 0
-a, b, c, d = 2, 1, 1, -5
+a, b, c, d = 1, 1, 1, -2
 
 # Create a grid of points for the x, y coordinates
 x, y = np.linspace(-20, 20, 100), np.linspace(-20, 20, 100)
@@ -17,31 +17,27 @@ fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.plot_surface(X, Y, Z, color='y')
 
-a, b, c, d = 4, -6, 0, -2
+a, b, c, d = 2, 0, 3, -5
 
-x, z = np.linspace(-20, 20, 100), np.linspace(-20, 20, 100)
-X, Z = np.meshgrid(x, z)
+Z = (-d - a*X - b*Y)/c
+Z = 0 
 
-Y = (-d - a*X - c*Z)/b
-
-ax.plot_surface(X, Y, Z, color='c')
-
-# x = np.linspace(-20, 20, 100)
-# y = (4*x+2)/6
-# ax.plot(x, y, '-r')
+x = np.linspace(-20, 20, 100)
+y = (2*x-5)/3
+ax.plot(x, y, '-r')
 
 # ax.plot_surface(X, Y, Z, color='m')
 
-# Create a grid of points for the x, y coordinates
-x, y = np.linspace(-20, 20, 100), np.linspace(-20, 20, 100)
-X, Y = np.meshgrid(x, y)
-
-a, b, c, d = -2, 7, 2, -9
+a, b, c, d = 3, 1, 4, -7
 
 Z = (-d - a*X - b*Y)/c
 
 ax.plot_surface(X, Y, Z, color='m')
 
-plt.plot(1, 1, 2, "-s", markersize=20)
+# a, b, c, d = 2, 0, 3, 5
+
+# Z = (-d - a*X - b*Y)/c
+
+# ax.plot_surface(X, Y, Z, color='c')
 
 plt.show()
